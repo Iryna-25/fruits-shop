@@ -91,6 +91,29 @@ header .shop-card .item h2 {
   margin-bottom: 10px;
 }
 
+header .shop-card .item .delete-icon {
+  float: right;
+  color: #8a8a8a;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+}
+
+header .shop-card .item .delete-icon:hover,
+header .shop-card .item .delete-icon:focus {
+  color: #dc3d3d;
+  transform: scale(1.5);
+}
+
+header .shop-card .sum {
+  float: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
 header .presentation {
   margin: 50px 0;
   background: url('./Images/fruit.jpg') no-repeat;
