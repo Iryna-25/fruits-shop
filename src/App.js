@@ -4,6 +4,7 @@ import Header from './Components/HeaderSection';
 import Footer from './Components/FooterSection';
 import Items from './Components/Items';
 import Categories from './Components/Categories';
+import CategoriesFilter from './Components/CategoriesFilter';
 
 class App extends React.Component {
   constructor(props) {
@@ -73,6 +74,7 @@ class App extends React.Component {
       <div className="wrapper">
         <Header orders={this.state.orders} onDelete={this.deleteOrder} />
         <Categories chooseCategory={this.chooseCategory} />
+        <CategoriesFilter />
         <Items items={this.state.currentItems} onAdd={this.addToOrder} />
         <Footer />
       </div>
